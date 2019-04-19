@@ -1,0 +1,30 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Regressions" preserve-order="true">
+    <!--   <listeners>
+           <listener class-name="TestResultListener"/>
+       </listeners>
+       -->
+    <test name="SignIn">
+        <classes>
+            <class name="tests.HomepageTests">
+                <methods>
+                    <include name="getSuiteName"></include>
+                    <include name="loadHomepage"></include>
+                </methods>
+            </class>
+            <class name="tests.InteractionTests">
+                <methods>
+                    <include name="loadInteractionsPage"></include>
+                    <include name="testSelectableItems"></include>
+                </methods>
+            </class>
+            <class name="tests.WidgetTests">
+                <methods>
+                    <include name="loadWidgetPage"></include>
+                    <include name="testCheckboxradioItems"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
