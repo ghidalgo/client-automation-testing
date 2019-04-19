@@ -11,9 +11,9 @@ By default the project is set to run the tests using `Chrome`.
 
 - To adjust which browser is being used go to:
 
-  **src > test > java > BaseTest.java** 
+  **src > test > java > base > BaseTest.java** 
   
-  Within `startSession()`, change the method that is assigned to `browser`. 
+  Within `startUp()`, change the method that is assigned to `driver`. 
   
   (e.g. `firefoxMac()`, `headlessChromeMac()`). Not all options have been tested out. The majority of the time chrome or
    firefox is used.
